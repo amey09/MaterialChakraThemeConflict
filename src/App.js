@@ -20,7 +20,7 @@ const chakraTheme = chakraExtendTheme();
 const materialTheme = muiCreateTheme();
 
 function App() {
-  const { onOpen, onClose, isOpen } = useDisclosure()
+  const { onOpen } = useDisclosure()
   return (
       <ChakraProvider theme={chakraTheme} resetCSS>
         <MaterialThemeProvider theme={{ [THEME_ID]: materialTheme }}>
